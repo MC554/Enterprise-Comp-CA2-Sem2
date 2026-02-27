@@ -6,12 +6,13 @@ This report analyses a dataset obtained from Kaggle about â€œThe Rolling Stoneâ€
 
 The dataset consists of six variables:  
 
-Ranking position 
-Release year 
-Album title 
-Artist name 
-Genre 
-Subgenre 
+1.Ranking position 
+2.Release year 
+3.Album title 
+4.Artist name 
+5.Genre 
+6.Subgenre 
+
 Ranking position & release year (Variables 1-2) are quantitative variables (numerical variables) while the other variables (Variables 3-6) are categorical variables. 
 This analysis aims to identify patterns from the Top 200 albums to see how music trends over time influence which genres appear most often in the rankings. 
 
