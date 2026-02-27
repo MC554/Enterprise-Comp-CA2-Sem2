@@ -37,6 +37,7 @@ his big difference shows that the ranking favors older music.
 
 We can also see an imbalance from the genre distribution because “Rock” is the most common genre having 142/200 albums. Other genres like Funk (39), Pop (21), Blues (17), Jazz (11), Hip Hop (8), Electronic (110, Raggae (6), 
 and Fold (13) show less often, once again showing an imbalance that the Top 200 ranking favors Rock compared to other genres. 
+
 **4. Visual Analysis**
 
 PIE CHART:
