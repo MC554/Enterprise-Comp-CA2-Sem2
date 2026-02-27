@@ -43,15 +43,13 @@ and Fold (13) show less often, once again showing an imbalance that the Top 200 
 **4. Visual Analysis**
 
 PIE CHART:
-The pie chart shows Rock dominating the Top 200 with 142 albums (71%), nearly three times larger than all other genres combined. This stark imbalance highlights a clear editorial bias toward Rock, likely reflecting the background and era of the critics who voted. 
+The pie chart shows Rock dominating the Top 200 with 142 albums (71%), nearly three times larger than all other genres combined. Funk/Soul follows at 19.5% and Pop at 10.5%, while genres like Hip Hop, Jazz, Electronic and Reggae barely register. This stark imbalance highlights a clear editorial bias toward Rock, likely reflecting the background and era of the critics who voted. The pie chart was the most effective choice for this data as it allows the viewer to instantly grasp how disproportionate the genre representation truly is.  
 
 BAR CHART:
-The bar chart displays the number of times individual artists appear in the Top 200 list. This visual makes it easier to compare artist representation and identify those with multiple entries. 
-
-The chart shows that certain artists appear more frequently than others, indicating their lasting influence and popularity. The variation in bar heights demonstrates an uneven distribution of recognition among artists. 
+The bar chart illustrates how frequently individual artists appear across the Top 200. A small number of artists — such as The Beatles, Bob Dylan, and The Rolling Stones — have significantly more entries than the rest, while the majority of artists appear only once or twice. This is a classic long-tail distribution, where a small elite group holds a large share of representation. It raises an important question: does appearing multiple times reflect genuine artistic greatness, or does it simply reflect that these artists came from the era the ranking already favours most? Notably, no Hip Hop or Electronic artist comes close to the entry count of the leading Rock acts, further reinforcing the genre imbalance identified throughout the dataset. 
 
 LINE CHART:
-The line chart shows a steady rise peaking in the 1970s at 84 albums, before dropping sharply to just 8 albums in the 2000s. This highlights how heavily the ranking favours older music, with culturally significant genres like Hip Hop and Electronic severely underrepresented despite their global impact. 
+The line chart tracks the number of Top 200 albums per decade, rising steadily from the 1950s and peaking sharply in the 1970s at 84 albums. After that, it falls continuously — 16 albums in the 1990s and just 8 in the 2000s. This decline is particularly significant when you consider that genres like Hip Hop, Electronic, and Alternative Rock were at their commercial and cultural peak during the 1980s and 1990s, yet they barely appear. This can be explained through the concept of critical canon formation — older albums have had far more time to be reviewed, referenced, and appreciated across multiple generations, which naturally elevates them in retrospective rankings. The line chart therefore not only shows what music made the list, but also reveals the generational bias of those who compiled it.
 
  MACHINE LEARNING  
 
