@@ -52,4 +52,16 @@ The line chart shows that the number in albums increases in the 1960s and reache
 This pattern aligns with the statistics and shows once again that older decades are more favored in the ranking.   
  
 
+ MACHINE LEARNING  
+
+The basic machine learning method was applied to test whether simple features could predict album rankings in The Rolling Stone's 500 Greatest Albums of All Time Top 200 list. The ranking system used two categories where albums in the 1-100 range received a 1 rating and albums in the 101-200 range received a 0 rating. The prediction used release year and genre and subgenre information while album title and artist name details were excluded because they contained excessive name variations. The research team selected a basic logistic regression model because it provides straightforward operation and performs effectively with limited datasets. The data was divided into two parts to create a training set and a testing set which the researchers used to evaluate model performance. The study found that albums from the 1960s and 1970s had a higher probability of being included in the Top 100 list. The Rock genre also had a higher chance of ranking in the Top 100. The basic machine learning approach confirmed the previous findings which showed that older albums and Rock music achieve better ranking positions. 
+
  
+
+Limitations & Ethical Considerations 
+
+The research examined The Rolling Stone collection of 500 Greatest Albums of All Time to analyze music trends through its Top 200 albums. The research shows that older music from the 1960s and 1970s received more favorable ranking results than newer music. Rock music constitutes approximately 70% of the total albums, while all other genres make up the remaining portion. The artists who have multiple appearances in the study demonstrate their status as highly successful musicians. The basic model demonstrated that older albums had a 100% probability of becoming Top 100 entries while Rock music would reach only 50% probability. The dataset shows some level of bias because the rankings depend on subjective judgments which prevents it from presenting complete musical information. 
+
+Conclusion  
+
+The analysis of the Top 200 albums shows that albums from the 1960s and 1970s receive higher rankings than newer albums. The majority of the list contains rock music as its primary genre. Multiple appearances by certain artists demonstrate their strong popularity among listeners. The basic model revealed that both Rock music and older albums have a higher chance of reaching the Top 100 list. The rankings display distinct patterns, but they rely on subjective judgments and fail to represent all music genres and artists. 
