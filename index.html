@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CA 2 - Enterprise Computing - Top Albums Dataset</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #ece1cf;
+        color: #333;
+        text-align: center;
+      }
+
+      .section-header {
+        background-color: #50378f20;
+        border-left: 8px solid #50378f;
+        padding: 12px 18px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        color: #50378f;
+      }
+
+      .navbar {
+        background-color: #50378f !important;
+      }
+
+      .charts-box {
+        background-color: #d9cbb6;
+        padding: 40px;
+        border-radius: 12px;
+        margin-top: 40px;
+      }
+
+      .chart-canvas {
+        width: 100%;
+        max-width: 900px;
+        height: 450px;
+        margin: 40px auto;
+        display: block;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <!-- nav Bar & Quicklinks  -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <span class="navbar-brand">
+          CA 2 - Enterprise Computing - Top Albums
+        </span>
+
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#overview">Overview</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#dataset">Dataset</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#stats">Statistics</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#charts">Charts</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#ml">ML</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-white" href="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Overview  -->
+      <section id="overview" class="container mt-4">
+        <h1 class="section-header">Overview</h1>
+        <p>We set out to figure out what really defines a "greatest album of all time" by digging into a list of 200 of them. The dataset, spanning from the 1950s to the early 2000s, covers everything from Rock and Funk/Soul to Jazz, Blues, and early Hip Hop. The goal wasn't just to list facts, but to see if we could spot the patterns musical and historical that explain why certain records stick around.</p>
+      </section>
+
+      <!-- Dataset Overview -->
+      <section id="dataset" class="container mt-5">
+        <h2 class="section-header">Dataset Overview</h2>
+        <p>The data itself is a showcase of who was popular at the time. The Beatles, Bob Dylan, Led Zeppelin, and Stevie Wonder show up again and again, which immediately tells you something about consistency and influence. While Rock dominates the list, the presence of Funk/Soul, Jazz, and even a few Hip Hop and Reggae albums shows that "greatness" isn't limited to one genre. The mix of release years and genres gave us a solid foundation to look for trends, both by eye and with a bit of machine learning.</p>
+      </section>
+
+      <!-- Descriptive Statistics -->
+      <section id="stats" class="container mt-5">
+        <h2 class="section-header">Descriptive Statistics</h2>
+        <p>The numbers confirmed some hunches and revealed a few surprises. As expected, Rock is the heavyweight champion, appearing on over 140 albums. But the real story is in the timeline. Cramming the data into decades showed an undeniable golden age: the 1960s and 1970s alone account for more than 140 of the 200 spots. This wasn't just a random cluster; it suggests that a specific period of cultural and musical experimentation left an outsized mark on the timeline.</p>
+      </section>
+
+      <!-- Chart.js Charts -->
+      <section id="charts" class="container charts-box">
+        <h2 class="section-header">Charts</h2>
+
+        <canvas id="chart1" class="chart-canvas"></canvas>
+        <canvas id="chart2" class="chart-canvas"></canvas>
+        <canvas id="chart3" class="chart-canvas"></canvas>
+      </section>
+
+      <!-- Machine Learning Sec -->
+      <section id="ml" class="container mt-5">
+        <h2 class="section-header">Machine Learning</h2>
+        <p>We wanted to see if a computer could spot the same patterns we were seeing or maybe find some we missed. So, we set up a simple test to see could a machine learning model predict whether an album landed in the Top 100 of Rolling Stone's list or fell in the 101-200 range. We labelled the top 100 as 1 and the other half as 0, then fed the model a few basic details release year, genre, and subgenre. After running the numbers through a logistic regression model, it came back with a clear verdict: if an album came out in the 60s or 70s and had a Rock label on it, the odds were stacked in favour of it being a Top 100 classic. It was less a surprise and more a confirmation of what the data had been telling us all along.</p>
+      </section>
+
+      <!-- Conclusion Sec -->
+      <section id="conclusion" class="container mt-5 mb-5">
+        <h2 class="section-header">Conclusion</h2>
+        <p>Looking at the data, it's hard to escape the conclusion that our idea of the "greatest" albums is heavily tilted toward the rock-centric 60s and 70s. The charts don't just show popularity; they show the backbone of what's been taught and written about as essential listening. The machine learning model simply reinforced this, learning to predict a Top 100 spot based on a 60s or 70s release date and a Rock genre tag. It points to a canon that, while featuring incredible music, is remarkably narrow in its timeframe and style. The albums themselves may be timeless, but the list is very much a product of a particular moment in music history.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 mb-3" style="color:#555;">
+      <p>Enterprise Computing CA2 • Top Albums Project</p>
+      <p>Website created using HTML, Bootstrap, and Chart.js</p>
+    </footer>
+
+    <!-- Chart.js Code -->
+    <script>
+      const xValues1 = [
+        "The Beatles",
+        "Bob Dylan",
+        "The Rolling Stones",
+        "Led Zeppelin",
+        "Bruce Springsteen",
+        "Elton John",
+        "Radiohead",
+        "Prince",
+        "Neil Young",
+      ];
+      const yValues1 = [7, 6, 7, 5, 4, 3, 2, 3, 2, 2];
+
+      const barColors1 = [
+        "#50378f",
+        "#d4b44c",
+        "#b85c4c",
+        "#6a7fbf",
+        "#e8d9c5",
+      ];
+
+      new Chart(document.getElementById("chart1"), {
+        type: "bar",
+        data: {
+          labels: xValues1,
+          datasets: [
+            {
+              backgroundColor: barColors1,
+              data: yValues1,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: { display: false },
+            title: {
+              display: true,
+              text: "Top Artists",
+              color: "#2b1d52",
+              font: { size: 24, weight: "bold" },
+              padding: { top: 10, bottom: 20 },
+            },
+          },
+        },
+      });
+
+      const genreLabels = [
+        "Rock",
+        "Funk",
+        "Jazz",
+        "Blues",
+        "Pop",
+        "HipHop",
+        "Electronic",
+        "Reggae",
+        "Folk",
+      ];
+
+      const genreValues = [142, 39, 11, 17, 21, 8, 11, 6, 13];
+
+      const genreColors = [
+        "#50378f",
+        "#6a7fbf",
+        "#d4b44c",
+        "#b85c4c",
+        "#e8d9c5",
+        "#8c6bbf",
+        "#c49d6b",
+        "#a65d5d",
+        "#f0e6d2",
+      ];
+
+      new Chart(document.getElementById("chart2"), {
+        type: "pie",
+        data: {
+          labels: genreLabels,
+          datasets: [
+            {
+              backgroundColor: genreColors,
+              data: genreValues,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Top Song Genres (Count of Albums)",
+              color: "#2b1d52",
+              font: { size: 24, weight: "bold" },
+              padding: { top: 10, bottom: 20 },
+            },
+          },
+        },
+      });
+
+      const decadeLabels = [
+        "1950s",
+        "1960s",
+        "1970s",
+        "1980s",
+        "1990s",
+        "2000s",
+      ];
+      const decadeValues = [6, 62, 84, 24, 16, 8];
+
+      new Chart(document.getElementById("chart3"), {
+        type: "line",
+        data: {
+          labels: decadeLabels,
+          datasets: [
+            {
+              label: "Albums Released",
+              borderColor: "#50378f",
+              pointBackgroundColor: "#50378f",
+              borderWidth: 3,
+              pointRadius: 5,
+              fill: true,
+              backgroundColor: "rgba(80, 55, 143, 0.15)",
+              data: decadeValues,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            title: {
+              display: true,
+              text: "Albums by Decade",
+              color: "#2b1d52",
+              font: { size: 24, weight: "bold" },
+              padding: { top: 10, bottom: 20 },
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
