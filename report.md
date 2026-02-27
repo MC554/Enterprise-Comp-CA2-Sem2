@@ -17,12 +17,14 @@ Ranking position & release year (Variables 1-2) are quantitative variables (nume
 This analysis aims to identify patterns from the Top 200 albums to see how music trends over time influence which genres appear most often in the rankings. 
 
 **2. Data Cleaning & Preparation** 
+
 The original dataset from Kaggle contained 500 albums. But for the purpose of this project, only the rankings between 1-200 albums were selected to make it simpler. 
 This was made to focus on the highest-rated entries and to maintain consistency in examining top-ranked music albums. 
 After filtering the data, the dataset was checked for missing values, including release year, ranking number, album title, genre, artist and subgenre. 
 There were no missing values as a result, no data needed to be filled in or removed, so everything remained complete and organized for descriptive statistical analysis.  
 
 **3. Descriptive Statistics**
+
 We used descriptive statistics to examine the release years of albums in the Top 200 ranking.The average (mean) release year is 1975, and the median is 1972. 
 These numbers are close in value, which shows that most albums were released around the early to mid 1970s.The mode (the most common release year) is 1967, this means that more albums were released in that year than any other year in the dataset. 
 The oldest album was released in 1955, and the newest in 2005, giving a total range of 50 years this might look a large time span but based on the standard deviation is around 10 years. 
@@ -36,6 +38,7 @@ his big difference shows that the ranking favors older music.
 We can also see an imbalance from the genre distribution because “Rock” is the most common genre having 142/200 albums. Other genres like Funk (39), Pop (21), Blues (17), Jazz (11), Hip Hop (8), Electronic (110, Raggae (6), 
 and Fold (13) show less often, once again showing an imbalance that the Top 200 ranking favors Rock compared to other genres. 
 **4. Visual Analysis**
+
 PIE CHART:
 The pie chart which represents Genres shows that “Rock” is more popular. Rock takes 142/200 which is around 70% of the dataset.  
 The rest of the genres occupy smaller  propositions of the chart. This visual representation reinforces the genre imbalance in the ranking. 
