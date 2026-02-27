@@ -41,16 +41,15 @@ and Fold (13) show less often, once again showing an imbalance that the Top 200 
 **4. Visual Analysis**
 
 PIE CHART:
-The pie chart which represents Genres shows that “Rock” is more popular. Rock takes 142/200 which is around 70% of the dataset.  
-The rest of the genres occupy smaller  propositions of the chart. This visual representation reinforces the genre imbalance in the ranking. 
+The pie chart shows Rock dominating the Top 200 with 142 albums (71%), nearly three times larger than all other genres combined. This stark imbalance highlights a clear editorial bias toward Rock, likely reflecting the background and era of the critics who voted. 
 
 BAR CHART:
-This chart represents how many times an artist appears. From the chart we see that some artists are recognized more than others, which means they are very popular. 
+The bar chart displays the number of times individual artists appear in the Top 200 list. This visual makes it easier to compare artist representation and identify those with multiple entries. 
+
+The chart shows that certain artists appear more frequently than others, indicating their lasting influence and popularity. The variation in bar heights demonstrates an uneven distribution of recognition among artists. 
 
 LINE CHART:
-The line chart shows that the number in albums increases in the 1960s and reaches its peaks in the 1970s. After the 1970s, the number starts to decrease lower and lower. 
-This pattern aligns with the statistics and shows once again that older decades are more favored in the ranking.   
- 
+The line chart shows a steady rise peaking in the 1970s at 84 albums, before dropping sharply to just 8 albums in the 2000s. This highlights how heavily the ranking favours older music, with culturally significant genres like Hip Hop and Electronic severely underrepresented despite their global impact. 
 
  MACHINE LEARNING  
 
